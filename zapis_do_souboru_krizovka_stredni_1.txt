@@ -1,0 +1,39 @@
+
+def binar():
+    c=3
+    x=6
+    y=c
+    z=7
+    C='C'
+    X='X'
+    Y='Y'
+    Z='Z'
+
+    vse=[c,x,y,z]
+    pis=[C,X,Y,Z]
+    #print(vse)
+    
+    for i in range(len(vse)):
+        b=''
+        ind=-1
+        binar=''
+        sez=[]
+        print(pis[i],'je',end='')
+        while vse[i]!=0:
+            s=vse[i]//2
+            podil=vse[i]%2
+            b+=str(podil)
+            vse[i]=s
+            if vse[i]==0:
+                d=len(b)
+                while d!=3:
+                    b+='0'
+                    d=len(b)
+        for j in range(len(b)):
+            binar+=b[ind]
+            ind-=1
+        #print(binar)
+        sez.append(binar)
+        print(sez)
+   
+print(binar())
